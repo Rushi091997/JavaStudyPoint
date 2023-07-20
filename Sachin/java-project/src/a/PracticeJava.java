@@ -1,4 +1,4 @@
-package com.practice.javaprograms.a;
+package a;
 
 class PracticeJava {
 
@@ -18,15 +18,27 @@ class PracticeJava {
 	public final String c = "C";
 	
 	
+	protected void move() {
+		System.out.println("Vehicle is moving");
+	}
+	
+	protected void run(String vehicleName) {
+		 
+	}
+	
 	
 	public static void main(String[] args) {
 		System.out.println(b);
 		System.out.println("Inside main");
 	}
 	 
-	
 	 
+	protected void run(String vehicleName, Integer noOfWheels) {
+		System.out.println(vehicleName +"is running");
+	}
 }
+
+
 
 //Static variables are class level variables and not Object level vars
 //Static variables are loaded at the time of class loading
@@ -35,13 +47,25 @@ class PracticeJava {
 //Static block - Block that executes at the time of class loading. Executes sequentially after variable declaration.
 
 
+class ChildClass extends PracticeJava{
+	
+	
+	protected void run(String vehicleName) {
+		System.out.println(vehicleName +"is running fast");
+	}
+	
+}
+
  
 class MainClass {
 	
 	public static void main(String[] args) {
 		System.out.println("");
-		PracticeJava p = new PracticeJava()
+		PracticeJava p = new PracticeJava();
 	
+		ChildClass c = new ChildClass();
+		
+		c.move();
 		 
 	} 	
 }

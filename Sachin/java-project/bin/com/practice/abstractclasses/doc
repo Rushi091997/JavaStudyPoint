@@ -1,0 +1,38 @@
+
+- Method Overloading
+In same class
+Two methods with same name having different number of parameter in same class
+(Can have same return type)
+
+
+- Method Overriding
+In child - parent class (in different classes)
+Two methods with same name and same number of parameter and same return type
+in child and parent classes. 
+
+
+
+Abstract class
+
+
+Pure abstract class - all the methods are only declared and not defined (no body). 
+Non pure abstract class - Few methods are declared and others methods contain body
+
+
+Class which contain abstract methods
+
+
+
+
+
+
+
+
+Abstract method
+Methods which have abstract keyword in the beginning.
+If we use abstract keyword, we can override the method in the child class.
+
+
+
+
+

@@ -1,4 +1,4 @@
-package com.practice.javaprograms.a;
+package a;
 
 public class PracticeJava2 {
 
